@@ -11,7 +11,7 @@ def calculate_income():
         revenue = float(entry_revenue.get())
         expenses = float(entry_expenses.get())
         income = revenue - expenses
-        label_result.configure(text=f"Business Income: ${income:,.2f}")
+        label_result.configure(text=f"Business Income: ₱{income:,.2f}")
     except ValueError:
         label_result.configure(text="Please enter valid numbers")
 
